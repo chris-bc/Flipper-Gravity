@@ -38,7 +38,7 @@ connect it to your computer, and run
 ```
 
 However, if you want to install just the application, you have two main options:
-1. `./fbt launch_app APPSRC=esp32_gravity` will build, install and start the application;
+1. `./fbt launch_app APPSRC=esp32_gravity` will build, install and start the application (Note that `launch_app` has been deprecated, new syntax is `./fbt fap_esp32_gravity launch APPSRC=esp32_gravity`);
 2. `./fbt flash_usb fap_esp32_gravity` will build the application and package it into a firmware update package;
 3. Copy the update directory, which will be reported towards the end of the above command and will be similar to `dist/f7-C/f7-update-RM420FAP`, to the Flipper Zero's SD card;
 4. Open Browser on the Flipper by pressing `Down`, then `Left` repeatedly until you reach a screen labelled **Browser**;
